@@ -15,7 +15,7 @@ export const Header = ({ imgSrc, name, followers }) => {
 };
 
 const HeaderContainer = styled.div`
-  width: 268px;
+  min-width: 268px;
   height: 215px;
   position: relative;
   margin: 59px auto 0 auto;
@@ -38,6 +38,8 @@ const ArtistName = styled.h1`
   transform: translate(-50%, -50%);
   text-shadow: ${SHADOWS.triple};
   font-size: 48px;
+  width: 100%;
+  text-align: center;
 `;
 
 const FollowerCount = styled.p`
